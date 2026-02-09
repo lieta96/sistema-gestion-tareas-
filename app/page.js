@@ -4,8 +4,8 @@ import { useEffect, useReducer, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/app/context/authContext";
 import { tasksService } from "@/app/services/tasksService";
-import { NewTask } from "./components/newTask";
-import { Task } from "./components/task";
+import NewTask from "@/app/components/newTask";
+import Task from "@/app/components/task";
 
 function tasksReducer(state, action) {
   switch (action.type) {

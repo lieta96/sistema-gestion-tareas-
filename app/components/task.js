@@ -2,7 +2,7 @@ import { useAuth } from "@/app/context/authContext";
 import { StatusSelect } from "./statusSelect";
 import { tasksService } from "@/app/services/tasksService";
 import { TrashIcon } from "./icons/trash";
-export const Task = ({ task, dispatchTasks }) => {
+export default function Task({ task, dispatchTasks }) {
     const { token } = useAuth();
     return (
         <div

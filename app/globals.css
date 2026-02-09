@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ebeef3;
+  --dark:#232e4c;
+  --light-blue:#c9e2f4;
+  --dark-blue:#26619a;
+  --light-orange:#f1dac1;
+  --dark-orange:#c36f2e;
+  --light-green:#d1ecd3;
+  --dark-green:#187430;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --color-white:#f9fafe;
+  --color-background: #ebeef3;
+  --color-dark:#232e4c;
+  --color-light:#9c9fa6;
+  --color-light-blue:#c9e2f4;
+  --color-dark-blue:#26619a;
+  --color-light-orange:#f1dac1;
+  --color-dark-orange:#c36f2e;
+  --color-light-green:#d1ecd3;
+  --color-dark-green:#187430;
+  --font-sans: var(--font-work-sans);
   --font-mono: var(--font-geist-mono);
 }
+button {
+  cursor: pointer;
+}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.btn-primary {
+  @apply rounded-lg bg-dark text-white px-4 py-2.5 font-medium  transition hover:bg-white hover:text-dark disabled:bg-light disabled:text-dark border-[1.5] border-dark;
+}
+.btn-secondary {
+  @apply rounded-lg bg-transparent text-dark px-4 py-2.5 font-medium  transition hover:bg-dark hover:text-white disabled:bg-light disabled:text-dark border-[1.5] border-dark;
+}
+.error-message {
+  @apply text-dark-orange text-sm mt-2 ;
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  font-family: var(--font-work-sans), system-ui, sans-serif;
 }

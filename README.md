@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sistema de Gestión de Tareas
 
-## Getting Started
+Proyecto [Next.js](https://nextjs.org) creado con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-First, run the development server:
+## Requisitos previos
+
+- **Node.js** 18.x o superior
+- **npm**, **yarn**, **pnpm** o **bun** (gestor de paquetes)
+
+## Configuración
+
+1. **Clonar el repositorio** (si aún no lo tienes):
+
+   ```bash
+   git clone <url-del-repositorio>
+   cd sistema-gestion-tareas
+   ```
+
+2. **Instalar dependencias**:
+
+   ```bash
+   npm install
+   # o
+   yarn install
+   # o
+   pnpm install
+   # o
+   bun install
+   ```
+
+## Ejecutar la aplicación
+
+### Modo desarrollo
+
+Arranca el servidor de desarrollo con:
 
 ```bash
 npm run dev
-# or
+# o
 yarn dev
-# or
+# o
 pnpm dev
-# or
+# o
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) en el navegador para ver la aplicación. Los cambios en el código se reflejan automáticamente.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Build de producción
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Genera la versión optimizada para producción:
 
-## Learn More
+```bash
+npm run build
+# o
+yarn build
+# o
+pnpm build
+# o
+bun run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Servidor de producción
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Tras ejecutar `build`, puedes servir la aplicación en modo producción:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run start
+# o
+yarn start
+# o
+pnpm start
+# o
+bun start
+```
 
-## Deploy on Vercel
+## Tests unitarios
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Los tests están escritos con **Jest** y **React Testing Library**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Ejecutar todos los tests**:
+
+```bash
+npm run test
+# o
+yarn test
+# o
+pnpm test
+# o
+bun test
+```
+
+**Ejecutar tests en modo watch** (se re-ejecutan al guardar cambios):
+
+```bash
+npm run test -- --watch
+# o
+yarn test --watch
+# o
+pnpm test --watch
+```
+
+**Ejecutar tests con cobertura**:
+
+```bash
+npm run test -- --coverage
+# o
+yarn test --coverage
+# o
+pnpm test --coverage
+```
+
+## Más información
+
+- [Documentación de Next.js](https://nextjs.org/docs)
+
+## Desplegar en Vercel
+
+La forma más sencilla de desplegar esta aplicación es usar [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme). Consulta la [documentación de despliegue de Next.js](https://nextjs.org/docs/app/building-your-application/deploying) para más detalles.

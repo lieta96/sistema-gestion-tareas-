@@ -115,7 +115,3 @@ pnpm test --coverage
 ## Más información
 
 - [Documentación de Next.js](https://nextjs.org/docs)
-
-## Desplegar en Vercel
-
-La forma más sencilla de desplegar esta aplicación es usar [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme). Consulta la [documentación de despliegue de Next.js](https://nextjs.org/docs/app/building-your-application/deploying) para más detalles.

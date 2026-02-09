@@ -14,7 +14,7 @@ describe("tasksService", () => {
             id: 5,
             title: "Test Task",
             description: "Test Description",
-            status: "TODO",
+            status: "To Do",
         };
         await expect(tasksService.addTask(mockTask, null)).rejects.toThrow("Unauthorized");
     });
@@ -23,7 +23,7 @@ describe("tasksService", () => {
             id: 1,
             title: "Test Task",
             description: "Test Description",
-            status: "TODO",
+            status: "To Do",
         };
         await expect(tasksService.updateTask(mockTask, null)).rejects.toThrow("Unauthorized");
     });
@@ -36,7 +36,7 @@ describe("tasksService", () => {
             id: 5,
             title: "Test Task",
             description: "Test Description",
-            status: "TODO",
+            status: "To Do",
         };
         const task = await tasksService.addTask(mockTask, mockToken);
         expect(task.id).toBe(tasksBefore.length + 1);
@@ -46,11 +46,11 @@ describe("tasksService", () => {
             id: 1,
             title: "Test Task",
             description: "Test Description",
-            status: "TODO",
+            status: "To Do",
         };
         const task = await tasksService.updateTask(mockTask, mockToken);
         expect(task).toBeDefined();
-        expect(task.status).toBe("TODO");
+        expect(task.status).toBe("To Do");
     });
     it("should delete a task when deleteTask is called", async () => {
         const tasksBefore = await tasksService.getTasks(mockToken);

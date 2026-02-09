@@ -30,15 +30,10 @@ const DEFAULT_TASKS = [
     description: 'CRUD de tareas usando los mocks.',
     status: TASK_STATUS.TODO,
   },
-];
-
-/** Estado en memoria del mock (se resetea al recargar la página). */
+]// Estado en memoria del mock 
 let tasksInMemory =  DEFAULT_TASKS.map((t) => ({ ...t }));
 
-/**
- * Store del mock de tareas. Simula un backend en memoria para que get/add/update/delete
- * sean coherentes durante la sesión.
- */
+// Store del mock de tareas. Simula un backend en memoria.
 export const taskStore = {
   getAll() {
     return tasksInMemory.map((t) => ({ ...t }));

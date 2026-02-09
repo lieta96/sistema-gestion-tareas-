@@ -36,14 +36,14 @@ export default function LoginPage() {
 
   if (!isInitialized) {
     return (
-      <main className="flex min-h-screen items-center justify-center bg-background">
+      <main className="flex items-center justify-center bg-background">
         <p className="">Loading...</p>
       </main>
     );
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-background font-sans text-dark p-4">
+    <main className="flex items-center justify-center bg-background font-sans text-dark p-4 my-auto">
       <div className="w-full max-w-sm rounded-xl bg-white p-6 shadow-sm">
         <h1 className="mb-6 text-center text-xl font-semibold">
           Welcome

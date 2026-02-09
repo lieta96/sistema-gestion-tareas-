@@ -22,11 +22,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body
-        className={`${workSans.variable} ${geistMono.variable} antialiased text-dark font-sans bg-background max-w-4xl mx-auto`}
+        className={`${workSans.variable} ${geistMono.variable} antialiased text-dark font-sans bg-background max-w-4xl mx-auto min-h-screen flex flex-col justify-between`}
       >
         <AuthProvider>  
           <Navbar/>
           {children}
+          <footer className='text-center text-xs py-4'>
+            <p>Coded by <a href="https://github.com/lieta96" target="_blank" rel="noopener noreferrer" className='font-semibold'>Lieta</a></p>
+          </footer>
         </AuthProvider>
       </body>
     </html>

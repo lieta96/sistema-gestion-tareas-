@@ -47,7 +47,7 @@ export default function Home() {
 
   if (!isInitialized) {
     return (
-      <main className="flex min-h-screen items-center justify-center bg-background">
+      <main className="flex  items-center justify-center bg-background">
         <p className="">Loading...</p>
       </main>
     );
@@ -57,7 +57,7 @@ export default function Home() {
     return null;
   }
   return (
-    <main className="min-h-screen bg-background font-sans text-dark">
+    <main className=" bg-background font-sans text-dark">
       <div className="mx-auto max-w-4xl px-4 py-8">
         <h1 className="max-md:hidden mb-8 text-2xl font-bold ">
           Tasks List

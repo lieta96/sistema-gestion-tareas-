@@ -2,6 +2,8 @@
 
 Proyecto [Next.js](https://nextjs.org) creado con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+**Demo en vivo:** [https://sistema-gestion-tareas-vert.vercel.app/](https://sistema-gestion-tareas-vert.vercel.app/)
+
 ## Requisitos previos
 
 - **Node.js** 18.x o superior

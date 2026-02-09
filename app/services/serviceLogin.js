@@ -21,4 +21,8 @@ export const authService = {
             }
         }
     },
+    async logout() {
+        await delay();
+        return true;
+    }
 }
